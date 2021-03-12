@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { MedecinsComponent } from './medecins/medecins.component';
 import { MedicamentsComponent } from './medicaments/medicaments.component';
 import { RapportsComponent } from './rapports/rapports.component';
+import { AuthentificationComponent } from './authentification/authentification.component';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { RapportsComponent } from './rapports/rapports.component';
     AppComponent,
     MedecinsComponent,
     MedicamentsComponent,
-    RapportsComponent
+    RapportsComponent,
+    AuthentificationComponent
   ],
   imports: [
     BrowserModule,
