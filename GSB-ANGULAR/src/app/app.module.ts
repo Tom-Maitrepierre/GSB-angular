@@ -17,7 +17,7 @@ import { RouterModule, Routes } from '@angular/router';
 const appRoutes : Routes =[
   {path: 'rapports',component:RapportsComponent },
   {path: 'rapports-modifier',component:ModifierRapportsComponent },
-  {path: 'rapports-modifier',component:CreerRapportsComponent },
+  {path: 'rapports-creer',component:CreerRapportsComponent },
 ]
 
   
