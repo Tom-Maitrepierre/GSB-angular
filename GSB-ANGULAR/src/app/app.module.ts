@@ -7,6 +7,8 @@ import { MedecinsComponent } from './medecins/medecins.component';
 import { MedicamentsComponent } from './medicaments/medicaments.component';
 import { RapportsComponent } from './rapports/rapports.component';
 import { AuthentificationComponent } from './authentification/authentification.component';
+import { ModifierRapportsComponent } from './rapports/modifier-rapports/modifier-rapports.component';
+import { CreerRapportsComponent } from './rapports/creer-rapports/creer-rapports.component';
 
 
 @NgModule({
@@ -15,7 +17,9 @@ import { AuthentificationComponent } from './authentification/authentification.c
     MedecinsComponent,
     MedicamentsComponent,
     RapportsComponent,
-    AuthentificationComponent
+    AuthentificationComponent,
+    ModifierRapportsComponent,
+    CreerRapportsComponent
   ],
   imports: [
     BrowserModule,
