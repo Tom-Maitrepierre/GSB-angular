@@ -7,7 +7,11 @@ import { MedecinsComponent } from './medecins/medecins.component';
 import { MedicamentsComponent } from './medicaments/medicaments.component';
 import { RapportsComponent } from './rapports/rapports.component';
 import { AuthentificationComponent } from './authentification/authentification.component';
+import { WebServiceService } from './web-service.service';
 
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule,ReactiveFormsModule } from '@angular/forms';
+import { AfficheMedecinsComponent } from './medecins/affiche-medecins/affiche-medecins.component';
 
 @NgModule({
   declarations: [
@@ -15,13 +19,17 @@ import { AuthentificationComponent } from './authentification/authentification.c
     MedecinsComponent,
     MedicamentsComponent,
     RapportsComponent,
-    AuthentificationComponent
+    AuthentificationComponent,
+    AfficheMedecinsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
-  providers: [],
+  providers: [WebServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
