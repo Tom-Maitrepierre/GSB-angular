@@ -8,11 +8,16 @@ import { MedecinsComponent } from './medecins/medecins.component';
 import { MedicamentsComponent } from './medicaments/medicaments.component';
 import { RapportsComponent } from './rapports/rapports.component';
 import { AuthentificationComponent } from './authentification/authentification.component';
+
 import { ModifierRapportsComponent } from './rapports/modifier-rapports/modifier-rapports.component';
 import { CreerRapportsComponent } from './rapports/creer-rapports/creer-rapports.component';
 import { RouterModule, Routes } from '@angular/router';
 
+import { WebServiceService } from './web-service.service';
 
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule,ReactiveFormsModule } from '@angular/forms';
+import { AfficheMedecinsComponent } from './medecins/affiche-medecins/affiche-medecins.component';
 
 const appRoutes : Routes =[
   {path: 'rapports',component:RapportsComponent },
@@ -20,7 +25,7 @@ const appRoutes : Routes =[
   {path: 'rapports-creer',component:CreerRapportsComponent },
 ]
 
-  
+
 
 @NgModule({
   declarations: [
@@ -30,15 +35,20 @@ const appRoutes : Routes =[
     RapportsComponent,
     AuthentificationComponent,
     ModifierRapportsComponent,
-    CreerRapportsComponent
+    CreerRapportsComponent,
+    AfficheMedecinsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
 
   ],
-  providers: [],
+  providers: [WebServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
