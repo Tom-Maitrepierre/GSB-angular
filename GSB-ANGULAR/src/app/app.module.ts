@@ -13,7 +13,6 @@ import { ModifierRapportsComponent } from './rapports/modifier-rapports/modifier
 import { CreerRapportsComponent } from './rapports/creer-rapports/creer-rapports.component';
 import { RouterModule, Routes } from '@angular/router';
 
-import { WebServiceService } from './web-service.service';
 
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule,ReactiveFormsModule } from '@angular/forms';
@@ -48,7 +47,7 @@ const appRoutes : Routes =[
     ReactiveFormsModule
 
   ],
-  providers: [WebServiceService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
