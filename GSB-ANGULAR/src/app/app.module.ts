@@ -16,7 +16,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule,ReactiveFormsModule } from '@angular/forms';
-import { AfficheMedecinsComponent } from './medecins/affiche-medecins/affiche-medecins.component';
+
 
 const appRoutes : Routes =[
   {path: 'rapports',component:RapportsComponent },
@@ -35,7 +35,6 @@ const appRoutes : Routes =[
     AuthentificationComponent,
     ModifierRapportsComponent,
     CreerRapportsComponent,
-    AfficheMedecinsComponent
   ],
   imports: [
     BrowserModule,
